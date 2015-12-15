@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: 400;
+    font-weight: normal;
+    src: url(./../fonts/OpenSans/OpenSans-Regular.woff) format("woff"),url(./../fonts/OpenSans/OpenSans-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+  font-style: 600;
+  font-weight: normal;
+  src: url(./../fonts/OpenSans/OpenSans-SemiBold.woff) format("woff"),url(./../fonts/OpenSans/OpenSans-SemiBold.woff2) format("woff2");
+}
+
+@charset "UTF-8";
+/**
+ * Léo Le Bras
+ * http://leolebras.com/
+ *
+ * Work with Sass
+ * http://sass-lang.com/
+ *
+ * Copyright 2012 - 2015
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ * Date of creation : 2012-09-05
+ * Last updated: 2015-20-11
+ */
+/*
+  Responsive
+*/
+/* ( rem => px
+    'small'        : 530px,
+    'medium'       : 768px,
+    'normal'       : 980px,
+    'large'        : 1200px,
+    'huge'         : 1400px,
+    'massive'      : 1600px
+) */
+/**
+ * strip-units
+ *
+ * @param {string} $number
+ * @return {int}
+ */
+/**
+ * image-url()
+ *
+ * @param {string} $file
+ * @return relative path
+ */
+/* * Add your helpers * */
+/**
+ * respond-to
+ *
+ * @param {string} || {int} $breakpoint
+ * @return {css}
+ */
+/*
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+  Personal additions :
+*/
+body {
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+article, aside, div, footer, header,
+nav, section {
+    box-sizing: border-box;
+}
+
+input, button, textarea, select {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: 1em;
+    outline: none;
+    appearance: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-end: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    -webkit-padding-start: 0;
+}
+
+a {
+    color: inherit;
+    outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+html {
+    font-size: 100%;
+    font-family: "Open Sans";
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+/**
+ * Headings
+ *
+ */
+/**
+ * Content text
+ *
+ */
+/**
+ * <form> component style
+ *
+ */
+form input, form textarea, form button {
+    font-family: "Open Sans";
+}
+
+/**
+ * Button styles
+ *
+ */
+/**
+ * Default component style
+ *
+ */
+.Default {
+    display: flex;
+    min-height: 100vh;
+    background: #f6b941;
+}
+
+.Default_content {
+    margin: auto;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: #7b5d21;
+}
+
+/* * */
+
+/*# sourceMappingURL=style.css.map */
