@@ -43,3 +43,6 @@ $ npm run build                # or: gulp production
 
 ## Documentation
 Coming (really) soon…
+
+## Developer
+Chalres MANGWA
