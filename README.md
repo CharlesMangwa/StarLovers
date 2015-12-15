@@ -45,4 +45,4 @@ $ npm run build                # or: gulp production
 Coming (really) soon…
 
 ## Developer
-Chalres MANGWA
+Charles MANGWA
