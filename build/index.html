@@ -2,87 +2,93 @@
 <html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>website-starter-kit</title>
+        <title>StarLovers</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="Home">
-        <main class="Home__container">
+        <main class="Home">
+        <section class="Home__container">
             <div class="Home__presentation">
                 <div class="Home__presentation__logo">
-                    <!-- <img src="" alt=""> -->
+                    <!-- <img src="" alt="">-->
                 </div>
-                <h2 class="Home__presentation__title">May the love be with you</h2>
-                <div class="Home__presentation__text">
-                </div>
+                
+                <div class="Home__presentation__text"></div>
                 <div class="Home__quote">
-                    <h3 class="Home__quote__message">{{quote-Message}}</h3>
-                    <p class="Home__quote__author">{{quote-Author}}</p>
+                    <h2 class="Home__quote__message">{{ quote-message }}</h3>
+                    <p class="Home__quote__author">{{ quote-author }}</p>
                 </div>
             </div>
             <div class="Home__form">
                 <form action="post">
                     <div class="Home__form">
-                        <h3 class="Home__form__about">à propos de vous</h3>
+                        <h2 class="Home__form__about">À propos de vous</h2>
                         PRÉNOM<br>
-                        <input type="text" name="name" required placeholder="Votre prénom...">
+                        <input type="text" name="name" placeholder="Votre prénom ..." required>
+                    
+                    <div class="Home__form__search__first">
+                        <h2 class="Home__form__search">Vos critères de sélection</h2>
+                        <select name="Âge" id="age">
+                            <option selected>—</option>
+                            <option value="young">Jeune</option>
+                            <option value="adult">Mature</option>
+                            <option value="old">Trop mature</option>
+                            <option value="ageNothing">Pas de préférence</option>
+                        </select>
+                        <select name="Taille" id="height">
+                            <option selected>—</option>
+                            <option value="tiny">Petit</option>
+                            <option value="normal">Normal</option>
+                            <option value="giant">Géant</option>
+                            <option value="heightNothing">Pas de préférence</option>
                     </div>
-                        <h3 class="Home__form__search">vos critères de sélection</h3>
-                        <div class="Home__form__search__first">
-                            <select name="Âge" id="age">
-                                <option selected>—</option>
-                                <option value="young">Jeune</option>
-                                <option value="adult">Mature</option>
-                                <option value="old">Trop mature</option>
-                                <option value="ageNothing">Pas de préférence</option>
-                            </select>
-                            <select name="Taille" id="height">
-                                <option selected>—</option>
-                                <option value="tiny">Petit</option>
-                                <option value="normal">Normal</option>
-                                <option value="giant">Géant</option>
-                                <option value="heightNothing">Pas de préférence</option>
-                            </select>
-                            <select name="Genre" id="gender">
-                                <option selected>—</option>
-                                <option value="male">Mâle</option>
-                                <option value="female">Femelle</option>
-                                <option value="idk">Un peu des deux</option>
-                                <option value="genderNothing">Pas de préférence</option>
-                            </select>
-                        </div>
-                        <div class="Home__form__search__second">
-                            <select name="Poids" id="weight">
-                                <option selected>—</option>
-                                <option value="Light">Léger</option>
-                                <option value="Equilibrate">Équilibré</option>
-                                <option value="Heavy">Lourd</option>
-                                <option value="weightNothing">Pas de préférence</option>
-                            </select>
-                            <select name="Espèce" id="species">
-                                <option selected>—</option>
-                                <option value="Human">Humain</option>
-                                <option value="Droid">Droïde</option>
-                                <option value="Hairy">Tout ce qui a des poils</option>
-                                <option value="Strange">Tout ce qui est étrange</option>
-                                <option value="speciesNothing">Pas de préférence</option>
-                            </select>
-                            <select name="Faction" id="faction">
-                                <option selected>—</option>
-                                <option value="Force">Force</option>
-                                <option value="Empire">Empire</option>
-                                <option value="Fuuu">Traître</option>
-                                <option value="factionNothing">Pas de préférence</option>
-                            </select>
-                        </div>
-                        <div class="Home__form__validate">
-                            <input type="submit" value="#TROUVERMONÂMESOEUR">
-                        </div>
+                    
+                    <div class="Home__form__search__second">
+                        </select>
+                        <select name="Genre" id="gender">
+                            <option selected>—</option>
+                            <option value="male">Mâle</option>
+                            <option value="female">Femelle</option>
+                            <option value="idk">Un peu des deux</option>
+                            <option value="genderNothing">Pas de préférence</option>
+                        </select>
+                  
+                    
+                        <select name="Poids" id="weight">
+                            <option selected>—</option>
+                            <option value="light">Léger</option>
+                            <option value="equilibrate">Équilibré</option>
+                            <option value="heavy">Lourd</option>
+                            <option value="weightNothing">Pas de préférence</option>
+                        </select>
+                    </div>
+                       
+                       <div class="Home__form__search__third">
+                        <select name="Espèce" id="species">
+                            <option selected>—</option>
+                            <option value="human">Humain</option>
+                            <option value="droid">Droïde</option>
+                            <option value="hairy">Tout ce qui a des poils</option>
+                            <option value="strange">Tout ce qui est étrange</option>
+                            <option value="speciesNothing">Pas de préférence</option>
+                        </select>
+                        <select name="Faction" id="faction">
+                            <option selected>—</option>
+                            <option value="force">Force</option>
+                            <option value="empire">Empire</option>
+                            <option value="betrayor">Traître</option>
+                            <option value="factionNothing">Pas de préférence</option>
+                        </select>
+                    </div>
+                    <div class="Home__form__validate">
+                        <input type="submit"                value="#TROUVERMONÂMESOEUR">
+                    </div>
                 </form>
             </div>
+        </section>
         </main>
-        <script src="js/index.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
