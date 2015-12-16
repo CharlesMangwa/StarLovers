@@ -13,6 +13,7 @@ a:visited { text-decoration: none; }
 
 em {
     color: #d70b52; 
+    font-style: normal;
 }
 
 h2 { 
@@ -84,7 +85,8 @@ select {
     background: #d70b52;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: bold;
     color: #fff;
     margin-top: 30px;
     border: none;

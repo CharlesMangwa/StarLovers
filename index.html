@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>StarLovers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="Home">
+        <main class="Home">
+        <section class="Home__container">
+            <div class="Home__presentation">
+                <div class="Home__presentation__logo">
+                    <!-- <img src="" alt="">-->
+                </div>
+                
+                <div class="Home__presentation__text">
+                    <div class="Home__presentation__concept">
+                        • Concept de StarLovers<br><br>
+                        <p class="Home__presentation__description">Présentation rapide de l’enjeu du site en 3 lignes. 
+                        Je mets ça pour l’instant, on determinera plus tard ce que l’on veut faire comme description (un                           peu d’humour etc..)</p>
+                    </div>
+                    
+                
+                    <div class="Home__quote">
+                       • CE QU’ILS PENSENT DE NOUS ! 
+                        <h2 class="Home__quote__message">{{ quote-message }}</h2>
+                        <p class="Home__quote__author">{{ quote-author }}</p>
+                        <h2 class="Home__quote__message">{{ quote-message }}</h2>
+                        <p class="Home__quote__author">{{ quote-author }}</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="Home__form">
+                <form action="post">
+                   <div class="Home__form__name">
+                        <h2 class="Home__form__about">À propos de vous</h2>
+                        PRÉNOM<br>
+                        <input type="text" name="name" placeholder="Votre prénom ..." required>
+                   </div>
+                   
+                   <div class="Home__form__search">
+                    
+                        <h2 class="Home__form__details">Vos critères de sélection</h2> 
+                        <div class="Home__form__search__first">
+                        ÂGE<br>
+                        <select name="Âge" id="age">
+                            <option selected>—</option>
+                            <option value="young">Jeune</option>
+                            <option value="adult">Mature</option>
+                            <option value="old">Trop mature</option>
+                            <option value="ageNothing">Pas de préférence</option>
+                        </select>
+                        TAILLE<br>
+                        <select name="Taille" id="height">
+                            <option selected>—</option>
+                            <option value="tiny">Petit</option>
+                            <option value="normal">Normal</option>
+                            <option value="giant">Géant</option>
+                            <option value="heightNothing">Pas de préférence</option>
+                        </select>
+                        
+                        GENRE<br>
+                        <select name="Genre" id="gender">
+                            <option selected>—</option>
+                            <option value="male">Mâle</option>
+                            <option value="female">Femelle</option>
+                            <option value="idk">Un peu des deux</option>
+                            <option value="genderNothing">Pas de préférence</option>
+                        </select>
+                    </div>
+                    
+                      <div class="Home__form__search__second">
+                       POIDS<br>
+                        <select name="Poids" id="weight">
+                            <option selected>—</option>
+                            <option value="light">Léger</option>
+                            <option value="equilibrate">Équilibré</option>
+                            <option value="heavy">Lourd</option>
+                            <option value="weightNothing">Pas de préférence</option>
+                        </select>
+                    
+                       GENRE<br>
+                        <select name="Espèce" id="species">
+                            <option selected>—</option>
+                            <option value="human">Humain</option>
+                            <option value="droid">Droïde</option>
+                            <option value="hairy">Tout ce qui a des poils</option>
+                            <option value="strange">Tout ce qui est étrange</option>
+                            <option value="speciesNothing">Pas de préférence</option>
+                        </select>
+                        CLAN<br>
+                        <select name="Faction" id="faction">
+                            <option selected>—</option>
+                            <option value="force">Force</option>
+                            <option value="empire">Empire</option>
+                            <option value="betrayor">Traître</option>
+                            <option value="factionNothing">Pas de préférence</option>
+                        </select>
+                    </div>
+                    <div class="Home__form__validate">
+                        <input type="submit"                value="#TROUVERMONÂMESOEUR">
+                    </div>
+                </form>
+            </div>
+        </section>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>
