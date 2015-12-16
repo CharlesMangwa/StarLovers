@@ -1,0 +1,109 @@
+/** PAGE 1 : Acceuil **/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url("https://unsplash.it/1500/1024/?blur");
+}
+
+a { color: #d70b52; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+em {
+    color: #d70b52; 
+}
+
+h2 { 
+    font-family: "Tungsten", sans-serif;
+    color: #fff; 
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+} 
+
+h3 {
+    font-family: "Tungsten", sans-serif;
+    color: #d70b52;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    width: 325px;
+    height: 45px;
+    border: #fff 1.5px solid;
+    padding-left: 10px;
+    margin-top: 5px;
+    background: transparent;
+    -webkit-border-radius: 2px;
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 10px; 
+    background: transparent;
+    border: #fff 1.5px solid;
+    -webkit-appearance: none;
+    border-radius: 1px;
+}
+
+.Home__quote__message {
+    color: grey;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__quote__author {
+    color: grey;
+    font-style: italic;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__form {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.Home__form select {
+    height: 45px;
+    width: 150px;
+}
+    
+
+.Home__form__validate input{
+    background: #d70b52;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+}
+
+/** PAGE 2 **/
+
+.Match__result {
+    height: 300px;
+}
+
+.Match__result__affinity{
+    color: #fff;   
+}
+
+.Match__result__about {
+    color: #fff;
+    padding: 5px 50px 5px 50px;
+    height: 50px;
+    background-color: #d70b52;
+}
+
