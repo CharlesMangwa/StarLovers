@@ -1,0 +1,62 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 { 
+    font-family: "Tungsten", sans-serif;
+    color: #c62a45; 
+    text-transform: uppercase;
+    font-weight: bold;
+} 
+
+h3 {
+    font-family: "Tungsten", sans-serif;
+    color: #c62a45;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border: grey 1px solid;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-left: 10px; 
+    background: transparent;
+    border: grey 1px solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0%;
+}
+
+.Home__quote__message {
+    color: grey;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__quote__author {
+    color: grey;
+    font-style: italic;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__form__validate input{
+    background: #c62a45;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    color: #ffffff;
+    margin-left: 60px;
+}
+
