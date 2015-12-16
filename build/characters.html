@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Star Lovers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="Characters">
+    	<main class="Characters__container">
+    		<section class="Characters__everyone">
+    			<header class="Characters__intro">
+    				<div class="Characters__intro__presentation">
+    					<div class="Characters__logo">
+    						<!-- <img src="" alt="">-->
+    					</div>
+    					<h3 class="Characters__intro__title">Tous les profils</h3>
+    				</div>
+    				<nav class="Characters__back">
+    					<a href="#">retour</a>
+    				</nav>
+    			</header>
+    			<div class="Characters__content">
+    				<!--Multiply several times-->
+    				<div class="Characters__content__card">
+    					<span class="Characters__content__card__name">{{ name }}</span>
+    					<a href="#" class="Characters__more">Voir le profil</a>
+    				</div>
+    			</div>
+    		</section>
+    		<nav class="Characters__nav">
+    			<a href="#" class="Characters__nav__beginning"><<</a>
+    			<a href="#" class="Characters__nav__back"><</a>
+    			<a href="#" class="Characters__nav__previous">{{ previous-page }}</a>
+    			<a href="#" class="Characters__nav__current">{{ current-page }}</a>
+    			<a href="#" class="Characters__nav__next">{{ next-page }}</a>
+    			<a href="#" class="Characters__nav__following">></a>
+    			<a href="#" class="Characters__nav__last">>></a>
+    		</nav>
+    	</main>
+        	<script src="js/index.js"></script>
+    </body>
+</html>

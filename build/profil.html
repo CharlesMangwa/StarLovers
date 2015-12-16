@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>StarLovers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    	<nav class="Match__nav">
+            <div class="Match__logo">
+                <img src="" alt="#">
+            </div>
+            <span>retour</span>
+            </nav>
+    	<section class="Profil__container">
+    		<div class="Profil__picture">
+
+    		</div>
+            <div class="Profil__infos">
+                <div class="Profil__infos__card">
+                    <h5 class="Profil__infos__card__name">{{name}}</h5>
+                    <p class="Profil__infos__card__job">{{job}}</p>
+                    <p class="Profil__infos__card__localisation">{{localisation}}</p>
+                </div>
+                <div class="Profil__infos__number">
+                    <span class="Profil__infos__height">Taille : {{ height }} CM</span>
+                    <span class="Profil__infos__gender">Genre : {{ gender }}</span>
+                    <span class="Profil__infos__weight">Poids : {{ weight }} KG</span>
+                    <span class="Profil__infos__species">Espèce : {{ species }}</span>
+                </div>
+            </div>
+            <div class="Profil__infos__bio">
+                <h4 class="Profil__infos__title">Biographie</h4>
+                <p class="Profil__infos__text">{{ bio }}</p>
+            </div>
+            <div class="Profil__infos__preferences">
+                <h4 class="Profil__infos__title">Préférences</h4>
+                <p class="Profil__infos__text">{{ preferences }}</p>
+            </div>
+            <div class="Profil__infos__relations">
+                <h4 class="Profil__infos__title">Relations</h4>
+                <p class="Profil__infos__text">{{ relations }}</p>
+                <div class="Profil__infos__picture">
+
+                    <a href="#"> <img src="" alt="#"> </a>
+                    <a href="#"> <img src="" alt="#"> </a>
+                    <a href="#"> <img src="" alt="#"> </a>
+                    
+                </div>
+            </div>
+
+    	</section>
+    <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>website-starter-kit</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="match">
+    	<nav class="Match__nav">
+    		<div class="Match__logo">
+    			<!-- <img src="" alt=""> -->
+    		</div>
+    		<span>retour</span>
+    	</nav>
+    	<main class="Match__container">
+    		<div class="Match__result">
+    			<h2 class="Match__result__title">Résultats</h3>
+    			<h3 class="Match__result__affinity">Nous avons trouvé <span class="Match__result__number">{{affinity-Number}}</span> affinités</h3>
+    			<a href="#" class="Match__result__about">En savoir plus</a>
+    			<a href="#" class="Match__result__users">Tous nos utilisateurs</a>
+    		</div>
+    		<div class="Match__proposal">
+    			<div class="Match__proposal__card">
+    				<span class="proposal__card__name">{{name}}</span>
+    				<span class="proposal__card__name">{{current-Proposal}}/{{total-Proposal}}</span>
+    			</div>
+    			<div class="Match__proposal__info">
+    				<h4 class="proposal__info__home__title">Localisation :</h4>
+    				<p class="proposal__info__home__currentHome">{{home}}</p>
+    				<h4 class="proposal__info__job__title">Job :</h4>
+    				<p class="proposal__info__job__currentJob">{{job}}</p>
+    			</div>
+    			<div class="Match__proposal__choice">
+    				<button type="button" class="proposal__choice__yes">OUI</button>
+    				<button type="button" class="proposal__choice__no">NON</button>
+    		</div>
+    		<aside class="Match__notificationCenter">
+    			<h3 class="Match__notificationCenter__title">Toutes vos sélections</h3>
+    			<div class="notificationCenter__match">
+    				<span class="notificationCenter__match__name">{{Name}}</span>
+    				<span class="notificationCenter__match__status">{{match-Status}}</span>
+    				<a href="#" class="notificationCenter__match__contact">Contacter</a>
+    			</div>
+    			<div class="Match__notificationCenter__chat">
+    				<button type="button" class="chat__showHide">Messagerie<span class="chat__showHide__number">{{number-Mesages}}</span></button>
+    			</div>
+    		</aside>
+    	</main>
+         <script src="js/index.js"></script>
+    </body>
+</html>

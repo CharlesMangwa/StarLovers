@@ -1,0 +1,256 @@
+/** PAGE 1 : Accueil **/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #000;
+}
+
+a { color: #d70b52; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+em {
+    color: #d70b52; 
+}
+
+h2 { 
+    font-family: "Tungsten", sans-serif;
+    color: #fff; 
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+} 
+
+h3 {
+    font-family: "Tungsten", sans-serif;
+    color: #d70b52;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    width: 325px;
+    height: 45px;
+    border: #fff 1.5px solid;
+    padding-left: 10px;
+    margin-top: 5px;
+    background: transparent;
+    -webkit-border-radius: 2px;
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 10px; 
+    background: transparent;
+    border: #fff 1.5px solid;
+    -webkit-appearance: none;
+    border-radius: 1px;
+}
+
+.Home__quote__message {
+    color: grey;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__quote__author {
+    color: grey;
+    font-style: italic;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__form {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.Home__form select {
+    height: 45px;
+    width: 150px;
+}
+    
+
+.Home__form__validate input{
+    background: #d70b52;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+}
+
+/** PAGE 2 **/
+
+.Match__result {
+    height: 300px;
+}
+
+.Match__result__affinity{
+    color: #fff;   
+}
+
+.Match__result__about {
+    color: #fff;
+    padding: 5px 50px 5px 50px;
+    height: 50px;
+    background-color: #d70b52;
+}
+
+/** PAGE PROFIL.HTML **/
+
+.Profil__picture img{
+    
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+h5{
+
+    font-family: "Tungsten", sans-serif;
+    color: #d70b52; 
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.8rem;
+
+}
+
+.Profil__infos__card__job {
+
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.Profil__infos__card__localisation {
+
+    color: #FFF;
+    font-size: 0.94rem;
+
+}
+
+.Profil__infos__number {
+
+    color: #FFF;
+    font-size: 0.88rem;
+
+}
+
+h4 {
+
+    color: #d70b52;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    font-weight: bold;
+
+}
+
+.Profil__infos__text {
+
+    color: #FFF;
+    font-size: 0.88rem;
+}
+
+.Profil__infos__picture img{
+
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+/** LOADING PAGE **/
+
+.Loading__container{
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.Loading__heart__1 {
+
+    background: url(../img/heart.svg);
+    background-size: cover;
+    position: absolute;
+    top: 33%;
+    left: 56%;
+    width: 40px;
+    height: 35px;
+    animation-name: heartbounce__1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.Loading__heart__2 {
+
+    background: url(../img/heart.svg);
+    background-size: cover;
+    position: absolute;
+    top: 30%;
+    left: 58%;
+    width: 20px;
+    height: 17.5px;
+    animation-name: heartbounce__2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes heartbounce__1 {
+
+  0% {top: 33%;opacity: 0.5;}
+  25% {top: 32.25%; opacity: 0.75;}
+  50% {top: 31.5%;opacity: 1;left:55.75%;}
+  75% {top: 32.25%; opacity:0.75;}
+  100% {top: 33%; opacity: 0.5;}
+
+}
+
+@keyframes heartbounce__2 {
+
+  0% {top: 30%; opacity:0.5;}
+  25% {top: 29.25%; opacity: 0.75;}
+  50% {top: 28.5%; opacity:1; left:58.25%;}
+  75% {top: 29.25%; opacity:0.75;}
+  100% {top: 30%; opacity: 0.5;}
+
+}
+
+.Loading__logo {
+
+    background-image: url(../img/starloversicon.svg);
+    align-items: center;
+    width: 800px;
+    height: 150px;
+}
+
+.Loading__infos__text {
+
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.88rem;
+    color: #d70b52;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateX(-210px);
+
+}
