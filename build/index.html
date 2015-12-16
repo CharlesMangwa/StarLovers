@@ -9,122 +9,79 @@
     </head>
     <body class="Home">
         <main class="Home">
-            <nav class="Match__nav">
-                <div class="Match__logo">
+        <section class="Home__container">
+            <div class="Home__presentation">
+                <div class="Home__presentation__logo">
                     <!-- <img src="" alt=""> -->
                 </div>
-                <span>retour</span>
-            </nav>
-            <section class="Home__container">
-                <div class="Home__presentation">
-                    <div class="Home__presentation__logo">
-                        <!-- <img src="" alt=""> -->
-                    </div>
-                    <h2 class="Home__presentation__title">May the love be with you</h2>
-                    <div class="Home__presentation__text">
-                    </div>
-                    <div class="Home__quote">
-                        <h3 class="Home__quote__message">{{quote-Message}}</h3>
-                        <p class="Home__quote__author">{{quote-Author}}</p>
-                    </div>
+                <h2 class="Home__presentation__title">May the love be with you</h2>
+                <div class="Home__presentation__text"></div>
+                <div class="Home__quote">
+                    <h3 class="Home__quote__message">{{ quote-message }}</h3>
+                    <p class="Home__quote__author">{{ quote-author }}</p>
                 </div>
-                <div class="Home__form">
-                    <form action="post">
-                        <div class="Home__form">
-                            <h3 class="Home__form__about">à propos de vous</h3>
-                            <input type="text" name="name" required>
-                        </div>
-                        <div class="Home__form__search__first">
-                            <h3 class="Home__form__search">vos critères de sélection</h3>
-                                <select name="Âge" id="age">
-                                    <option selected>—</option>
-                                    <option value="young">Jeune</option>
-                                    <option value="adult">Mature</option>
-                                    <option value="old">Trop mature</option>
-                                    <option value="ageNothing">Pas de préférence</option>
-                                </select>
-                                <select name="Taille" id="height">
-                                    <option selected>—</option>
-                                    <option value="tiny">Petit</option>
-                                    <option value="normal">Normal</option>
-                                    <option value="giant">Géant</option>
-                                    <option value="heightNothing">Pas de préférence</option>
-                                </select>
-                                <select name="Genre" id="gender">
-                                    <option selected>—</option>
-                                    <option value="male">Mâle</option>
-                                    <option value="female">Femelle</option>
-                                    <option value="idk">Un peu des deux</option>
-                                    <option value="genderNothing">Pas de préférence</option>
-                                </select>
-                            </div>
-                            <div class="Home__form__search__second">
-                                <select name="Poids" id="weight">
-                                    <option selected>—</option>
-                                    <option value="Light">Léger</option>
-                                    <option value="Equilibrate">Équilibré</option>
-                                    <option value="Heavy">Lourd</option>
-                                    <option value="weightNothing">Pas de préférence</option>
-                                </select>
-                                <select name="Espèce" id="species">
-                                    <option selected>—</option>
-                                    <option value="Human">Humain</option>
-                                    <option value="Droid">Droïde</option>
-                                    <option value="Hairy">Tout ce qui a des poils</option>
-                                    <option value="Strange">Tout ce qui est étrange</option>
-                                    <option value="speciesNothing">Pas de préférence</option>
-                                </select>
-                                <select name="Faction" id="faction">
-                                    <option selected>—</option>
-                                    <option value="Force">Force</option>
-                                    <option value="Empire">Empire</option>
-                                    <option value="Fuuu">Traître</option>
-                                    <option value="factionNothing">Pas de préférence</option>
-                                </select>
-                            </div>
-                            <div class="Home__form__validate">
-                                <input type="submit" value="#TROUVERMONÂMESOEUR">
-                            </div>
-                    </form>
-                </div>
-            </section>
-            <section class="Match__container" v-if="show" transition="expand">
-                <div class="Match__result">
-                    <h2 class="Match__result__title">Résultats</h2>
-                    <h3 class="Match__result__affinity">Nous avons trouvé <span class="Match__result__number">{{affinity-Number}}</span> affinités</h3>
-                    <a href="#" class="Match__result__about">En savoir plus</a>
-                    <a href="#" class="Match__result__users">Tous nos utilisateurs</a>
-                </div>
-                <div class="Match__proposal">
-                    <div class="Match__proposal__card">
-                        <span class="proposal__card__name">{{name}}</span>
-                        <span class="proposal__card__name">{{current-Proposal}}/{{total-Proposal}}</span>
+            </div>
+            <div class="Home__form">
+                <form action="post">
+                    <div class="Home__form">
+                        <h3 class="Home__form__about">À propos de vous</h3>
+                        <input type="text" name="name" required>
                     </div>
-                    <div class="Match__proposal__info">
-                        <h4 class="proposal__info__home__title">Localisation :</h4>
-                        <p class="proposal__info__home__currentHome">{{home}}</p>
-                        <h4 class="proposal__info__job__title">Job :</h4>
-                        <p class="proposal__info__job__currentJob">{{job}}</p>
+                    <div class="Home__form__search__first">
+                        <h3 class="Home__form__search">Vos critères de sélection</h3>
+                        <select name="Âge" id="age">
+                            <option selected>—</option>
+                            <option value="young">Jeune</option>
+                            <option value="adult">Mature</option>
+                            <option value="old">Trop mature</option>
+                            <option value="ageNothing">Pas de préférence</option>
+                        </select>
+                        <select name="Taille" id="height">
+                            <option selected>—</option>
+                            <option value="tiny">Petit</option>
+                            <option value="normal">Normal</option>
+                            <option value="giant">Géant</option>
+                            <option value="heightNothing">Pas de préférence</option>
+                        </select>
+                        <select name="Genre" id="gender">
+                            <option selected>—</option>
+                            <option value="male">Mâle</option>
+                            <option value="female">Femelle</option>
+                            <option value="idk">Un peu des deux</option>
+                            <option value="genderNothing">Pas de préférence</option>
+                        </select>
                     </div>
-                    <div class="Match__proposal__choice">
-                        <button type="button" class="proposal__choice__yes">OUI</button>
-                        <button type="button" class="proposal__choice__no">NON</button>
+                    <div class="Home__form__search__second">
+                        <select name="Poids" id="weight">
+                            <option selected>—</option>
+                            <option value="light">Léger</option>
+                            <option value="equilibrate">Équilibré</option>
+                            <option value="heavy">Lourd</option>
+                            <option value="weightNothing">Pas de préférence</option>
+                        </select>
+                        <select name="Espèce" id="species">
+                            <option selected>—</option>
+                            <option value="human">Humain</option>
+                            <option value="droid">Droïde</option>
+                            <option value="hairy">Tout ce qui a des poils</option>
+                            <option value="strange">Tout ce qui est étrange</option>
+                            <option value="speciesNothing">Pas de préférence</option>
+                        </select>
+                        <select name="Faction" id="faction">
+                            <option selected>—</option>
+                            <option value="force">Force</option>
+                            <option value="empire">Empire</option>
+                            <option value="betrayor">Traître</option>
+                            <option value="factionNothing">Pas de préférence</option>
+                        </select>
                     </div>
-                </div>
-                <aside class="Match__notificationCenter">
-                    <h3 class="Match__notificationCenter__title">Toutes vos sélections</h3>
-                    <div class="notificationCenter__match">
-                        <span class="notificationCenter__match__name">{{Name}}</span>
-                        <span class="notificationCenter__match__status">{{match-Status}}</span>
-                        <a href="#" class="notificationCenter__match__contact">Contacter</a>
+                    <div class="Home__form__validate">
+                        <input type="submit"                value="#TROUVERMONÂMESOEUR">
                     </div>
-                    <div class="Match__notificationCenter__chat">
-                        <button type="button" class="chat__showHide">Messagerie<span class="chat__showHide__number">{{number-Mesages}}</span></button>
-                    </div>
-                </aside>
-            </section>
+                </form>
+            </div>
+        </section>
         </main>
-        <script src="js/vue.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
