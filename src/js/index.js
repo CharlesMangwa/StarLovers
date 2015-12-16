@@ -1,3 +1,8 @@
+import vue from 'vue';
+import { select, text } from './helpers/dom';
+
+select('.Default_content')::text(`It works &#92;o/ !`);
+
 Vue.transition('expand', {
 
   beforeEnter: function (el) {
@@ -26,3 +31,5 @@ Vue.transition('expand', {
     // handle cancellation
   }
 })
+
+console.log('etsssss');
