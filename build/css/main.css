@@ -2,12 +2,16 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-image: url("http://image.noelshack.com/fichiers/2015/51/1450280037-bg.png");
+    background-image: /**url("http://image.noelshack.com/fichiers/2015/51/1450280037-bg.png");**/
+    url("http://www.planwallpaper.com/static/images/HD-Wallpapers1.jpeg");
 }
 
 p {
-    font-size: 10px;
-    color: #fff;
+   font-family   : "Open Sans", cursive;
+   font-weight   : 300;
+   color         : white;
+   font-size     : 0.88rem; 
+   margin-bottom : 1.875rem; /*30px*/
 }
 
 a { color: #d70b52;
@@ -259,6 +263,80 @@ button {
     width: 6%;
     height: 6%;
     border-radius: 50% 50%;      
+}
+
+/*** PAGE ABOUT ***/
+
+.About__container__close {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 75px;
+    left: 790px;
+}
+
+.About__shadow {
+    width: 66%;
+    height: 900px;
+    position: relative;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.About__container {
+    width: 695px;
+    height: 671px;
+    position: absolute;
+    top: 120px;
+    left: 75px;
+    z-index: 1;
+}
+
+.About__container__title {
+    width: 695px;
+    height: 100px;  
+    text-align: center;
+}
+
+.About__container__text {
+    margin-left: 75px;
+}
+
+.About__container__text__how {
+    width: 570px;
+    height: 221px;
+}
+
+.About__container__text__how h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.About__container__text__who {
+    width: 570px;
+    height: 150px;
+}
+
+.About__container__text__who h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.About__container__text__use {
+    width: 570px;
+    height: 150px;
+}
+
+.About__container__text__use h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
