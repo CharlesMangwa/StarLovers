@@ -1,0 +1,187 @@
+/** PAGE 1 : Acceuil **/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url("http://image.noelshack.com/fichiers/2015/51/1450280037-bg.png");
+}
+
+a { color: #d70b52; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+em {
+    color: #d70b52; 
+}
+
+h2 { 
+    font-family: "Tungsten", sans-serif;
+    color: #fff; 
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+} 
+
+h3 {
+    font-family: "Tungsten", sans-serif;
+    color: #d70b52;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    width: 325px;
+    height: 45px;
+    border: #fff 1.5px solid;
+    padding-left: 10px;
+    margin-top: 5px;
+    background: transparent;
+    -webkit-border-radius: 2px;
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 10px; 
+    background: transparent;
+    border: #fff 1.5px solid;
+    -webkit-appearance: none;
+    border-radius: 1px;
+}
+
+.Home__quote__message {
+    color: grey;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__quote__author {
+    color: grey;
+    font-style: italic;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.Home__form {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.Home__form select {
+    height: 45px;
+    width: 150px;
+}
+    
+
+.Home__form__validate input{
+    background: #d70b52;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+}
+
+/** PAGE 2 **/
+
+.Match__result {
+    height: 300px;
+}
+
+.Match__result__affinity{
+    color: #fff;   
+}
+
+.Match__result__about {
+    color: #fff;
+    padding: 5px 50px 5px 50px;
+    height: 50px;
+    background-color: #d70b52;
+}
+
+/** PAGE CHARACTERS **/
+
+.Characters__content__card__name {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+.Characters__more {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+.Characters__nav_beginning {
+    color:#eee;
+}
+
+/** PAGE MOBILE **/
+
+.Mobile__container {
+    margin-top: 15%
+}
+
+.Mobile__info__oops {
+    margin:auto;
+    text-align: center;
+    -webkit-animation: advent 1s ease;
+    -moz-animation: advent 1s ease;
+    -o-animation: advent 1s ease;
+    animation: advent 1s ease;
+}
+
+.Mobile__info__text {
+    font-family: "Open Sans", sans-serif;
+    color: #fff; 
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size:0.65rem;
+    margin: auto;
+    text-align: center;
+}
+
+.Mobile {
+    background-image: url("../img/mobile.png");
+    background-size:cover;
+}
+
+.Mobile__logo {
+    width:220px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 25%;
+}
+
+-webkit-@keyframes advent {
+    0%   {opacity:0;-webkit-transform:translateY(-50px)}
+    70% {transform:translateY(5px);}
+    100% {opacity:1;-webkit-transform:translateY(0px);}
+}
+
+-moz-@keyframes advent {
+    0%   {opacity:0;-moz-transform:translateY(-50px)}
+    70% {transform:translateY(5px);}
+    100% {opacity:1;-moz-transform:translateY(0px);}
+}
+
+-o-@keyframes advent {
+    0%   {opacity:0;-o-transform:translateY(-50px)}
+    70% {transform:translateY(5px);}
+    100% {opacity:1;-o-transform:translateY(0px);}
+}
+
+@keyframes advent {
+    0%   {opacity:0;transform:translateY(-50px)}
+    70% {transform:translateY(5px);}
+    100% {opacity:1;transform:translateY(0px);}
+}
