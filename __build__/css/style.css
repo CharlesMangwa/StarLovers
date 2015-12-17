@@ -301,6 +301,13 @@ a {
     border-radius: 3px;
     background-color: #d70b52;
     text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+a:hover, a:active, a:focus {
+    background-color: #fefefe;
+    color: #d70b52;
+    transition: all ease-in-out 0.3s;
 }
 
 /**
@@ -438,6 +445,7 @@ form p {
 }
 
 .Button:hover, .Button:active, .Button:focus {
+    cursor: pointer;
     background-color: #c20a4a;
     transition: all ease 0.3s;
 }
@@ -477,6 +485,12 @@ form p {
     background-color: #fefefe;
 }
 
+.Infos a:hover, .Infos a:active, .Infos a:focus {
+    color: #fefefe;
+    background-color: #d70b52;
+    transition: all ease 0.3s;
+}
+
 .Infos__users {
     position: absolute;
     bottom: 1.25rem;
@@ -486,6 +500,12 @@ form p {
 .Infos__users a {
     color: #d70b52;
     background-color: #fefefe;
+}
+
+.Infos__users a:hover, .Infos__users a:active, .Infos__users a:focus {
+    color: #fefefe;
+    background-color: #d70b52;
+    transition: all ease 0.3s;
 }
 
 /**
@@ -498,7 +518,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: thin solid red;
 }
 
 nav a {
@@ -506,6 +525,7 @@ nav a {
     background: none;
     width: auto;
     height: auto;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 75rem) {
@@ -532,6 +552,10 @@ nav .Logo a {
 
 nav .Logo a::before {
     display: none;
+}
+
+nav .Logo a:hover {
+    background: none;
 }
 
 nav .Logo a img {
@@ -613,6 +637,7 @@ nav .Logo a img {
 
 .NotificationCenter__photo.declined::after {
     box-shadow: 0 0 1.125rem #d70b52;
+    background-color: #d70b52;
 }
 
 .NotificationCenter__characterInfos {
@@ -649,7 +674,7 @@ nav .Logo a img {
 
 .NotificationCenter__requestState {
     display: flex;
-    height: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex: 0.4;
@@ -682,16 +707,22 @@ nav .Logo a img {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: auto;
+    height: 19.375rem;
     justify-content: center;
     align-items: center;
     margin: 3.125rem auto;
     text-align: center;
 }
 
+@media only screen and (min-width: 75rem) {
+    .Proposal__card {
+        height: auto;
+    }
+}
+
 .Proposal__card img {
-    width: 180px;
-    height: 180px;
+    width: 9.375rem;
+    height: 9.375rem;
     border-radius: 100%;
     border: 4px solid #d70b52;
 }
@@ -709,6 +740,16 @@ nav .Logo a img {
 
 .Proposal__card p {
     margin-bottom: 0;
+}
+
+.Proposal__card.finish {
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 75rem) {
+    .Proposal__card.finish {
+        height: 31.25rem;
+    }
 }
 
 .Proposal__infos {
@@ -869,6 +910,25 @@ nav .Logo a img {
     width: 100vw;
     height: 100vh;
     background-color: #171717;
+}
+
+.Loading nav {
+    height: auto;
+}
+
+.Loading nav a {
+    margin-top: 1.25rem;
+}
+
+.Loading nav a::before {
+    position: absolute;
+    transform: translateX(172px) translateY(8px) rotate(180deg);
+    display: block;
+    content: "";
+    width: 30px;
+    height: 10px;
+    background: url("../img/arrow.svg") no-repeat center;
+    background-size: 100%;
 }
 
 .Loading__container {
@@ -1036,6 +1096,7 @@ nav .Logo a img {
     align-items: center;
     width: 800px;
     height: 150px;
+    cursor: pointer;
 }
 
 @media only screen and (orientation: portrait) and (min-height: 48rem) {

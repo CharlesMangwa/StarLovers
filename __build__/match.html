@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="Match">
+<body class="Match" onload="screen.lockOrientation('landscape');">
     <nav>
         <div class="Logo">
             <a href="index.html"><img src="img/starlovers.svg" alt="StarLovers - May the Love be with you!"></a>
         </div>
-        <a href="#">RETOUR</a>
+        <a href="index.html">RETOUR</a>
     </nav>
     <main class="Match__container">
         <div class="Match__proposal">
@@ -22,9 +22,14 @@
                 <h2 class="Match__result__title">Résultats</h2>
                 <h3 class="Match__result__affinity">Nous avons trouvé <em class="Match__result__number"> 18 </em> affinités</h3>
             </div>
-            <div class="Proposal__card">
+<!--             <div class="Proposal__card finish">
+                <img src="img/chewbacca.svg" alt="">
+                <h2>C'EST LA LOOSE…</h2>
+                <h4><a href="characters.html">jète un coup d'oeil aux autres utilisateurs !</a href="characters.html"></h4>
+            </div> -->
+                        <div class="Proposal__card">
                 <div class="Proposal__photo">
-                    <img src="https://unsplash.it/1000/1000/?random" alt="profile">
+                    <img src="http://www.capology.co.uk/blog/wp-content/uploads/2013/07/yoda2.jpg" alt="profile">
                 </div>
                 <div class="Proposal__infos">
                     <h2 class="Proposal__infos__card__number">3/16</h2>
@@ -43,10 +48,10 @@
             <h3 class="NotificationCenter__title">Tous mes crushes</h3>
             <article class="NotificationCenter__item">
                 <div class="NotificationCenter__photo">
-                    <img src="https://unsplash.it/1000/1000/?random" alt="profile">
+                    <img src="img/adi_gallia.png" alt="profile">
                 </div>
                 <div class="NotificationCenter__characterInfos">
-                    <p>Maître Yoda</p>
+                    <p>Adi Gallia</p>
                     <a href="#">Contacter</a>
                 </div>
                 <div class="NotificationCenter__requestState">
@@ -55,22 +60,22 @@
             </article>
             <article class="NotificationCenter__item">
                 <div class="NotificationCenter__photo declined">
-                    <img src="https://unsplash.it/1001/1001/?random" alt="profile">
+                    <img src="img/dark_vador.png" alt="profile">
                 </div>
                 <div class="NotificationCenter__characterInfos">
-                    <p>Maître Yoda</p>
+                    <p>Dark Vador</p>
                     <a href="#">Contacter</a>
                 </div>
-                <div class="NotificationCenter__requestState">
+                <div class="NotificationCenter__requestState declined">
                     <p>Refusée</p>
                 </div>
             </article>
             <article class="NotificationCenter__item">
                 <div class="NotificationCenter__photo accepted">
-                    <img src="https://unsplash.it/1002/1002/?random" alt="profile">
+                    <img src="img/beru_whitesun_lars.png" alt="profile">
                 </div>
                 <div class="NotificationCenter__characterInfos">
-                    <p>Maître Yoda</p>
+                    <p>Beru Whitesun</p>
                     <a href="#">Contacter</a>
                 </div>
                 <div class="NotificationCenter__requestState accepted">
@@ -78,10 +83,10 @@
                 </div>
             </article>
             <div class="Infos">
-                <a href="">About us</a>
+                <a href="">À propos</a>
             </div>
             <div class="Infos__users">
-                <a href="">Utilisateurs</a>
+                <a href="#">Utilisateurs</a>
             </div>
         </aside>
     </main>
