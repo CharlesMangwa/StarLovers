@@ -5,25 +5,45 @@
         <title>StarLovers</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <nav class="Match__nav">
             <div class="Match__logo">
                 <!-- <img src="" alt=""> -->
             </div>
-            <span>retour</span>
-        </nav>
+            <a href="#" class="Profil__back">retour</a>
+            </nav>
         <section class="Profil__container">
             <div class="Profil__picture">
-                <img src="https://unsplash.it/400/450/?random" alt="profile">
+                <!-- <img src="" alt""> -->
             </div>
             <div class="Profil__infos">
-                <h3 class="Profil__name">{{name}}</h3>
-                <p class="Profil__job">{{job}}</p>
-                <p class="Profil__localisation">{{localisation}}</p>
+                <div class="Profil__infos__card">
+                    <h3 class="Profil__infos__card__name">{{name}}</h3>
+                    <p class="Profil__infos__card__job">{{job}}</p>
+                    <p class="Profil__infos__card__localisation">{{localisation}}</p>
+                </div>
+                <div class="Profil__infos__number">
+                    <span class="Profil__infos__height">Taille : {{ height }} CM</span>
+                    <span class="Profil__infos__gender">Genre : {{ gender }}</span>
+                    <span class="Profil__infos__weight">Poids : {{ weight }} KG</span>
+                    <span class="Profil__infos__species">Espèce : {{ species }}</span>
+                </div>
+            </div>
+            <div class="Profil__infos__bio">
+                <h4 class="Profil__infos__title">Biographie</h4>
+                <p class="Profil__infos__text">{{ bio }}</p>
+            </div>
+            <div class="Profil__infos__relations">
+                <h4 class="Profil__infos__title">Relations</h4>
+                <p class="Profil__infos__text">{{ relations }}</p>
+            </div>
+            <div class="Profil__infos__preferences">
+                <h4 class="Profil__infos__title">Préférences</h4>
+                <p class="Profil__infos__text">{{ preferences }}</p>
             </div>
         </section>
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>
