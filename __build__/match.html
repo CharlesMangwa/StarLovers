@@ -27,12 +27,12 @@
                     <img src="https://unsplash.it/1000/1000/?random" alt="profile">
                 </div>
                 <div class="Proposal__infos">
-                    <h2 class="Proposal__card__number">3/16</h2>
-                    <i class="Proposal__card__name">Maître Yoda</i>
-                    <p class="Proposal__job">Grand maître du sabre laser</p>
-                    <p class="Proposal__currentHome">Dagobah</p>
+                    <h2 class="Proposal__infos__card__number">3/16</h2>
+                    <i class="Proposal__infos__card__name">Maître Yoda</i>
+                    <p class="Proposal__infos__job">Grand maître du sabre laser</p>
+                    <p class="Proposal__infos__currentHome">Dagobah</p>
                 </div>
-                <div class="Match__proposal__choice">
+                <div class="Proposal__choice">
                     <button type="button" class="Button yes">OUI</button>
                     <button type="button" class="Button no">NON</button>
                 </div>
@@ -40,21 +40,48 @@
         </div>
         </div>
         <aside class="NotificationCenter">
-            <h3 class="NotificationCenter__title">Toutes vos sélections</h3>
+            <h3 class="NotificationCenter__title">Tous mes crushes</h3>
             <article class="NotificationCenter__item">
                 <div class="NotificationCenter__photo">
-                    <img src="" alt="">
+                    <img src="https://unsplash.it/1000/1000/?random" alt="profile">
                 </div>
                 <div class="NotificationCenter__characterInfos">
-                    <p>{{ name }}</p>
+                    <p>Maître Yoda</p>
                     <a href="#">Contacter</a>
                 </div>
                 <div class="NotificationCenter__requestState">
-                    <p>{{ match-state }}</p>
+                    <p>En attente</p>
                 </div>
             </article>
-            <div class="Chat">
-                <button type="button" class="Chat__button">Messagerie<span class="Chat__unread">{{ messages-unread-total }}</span></button>
+            <article class="NotificationCenter__item">
+                <div class="NotificationCenter__photo declined">
+                    <img src="https://unsplash.it/1001/1001/?random" alt="profile">
+                </div>
+                <div class="NotificationCenter__characterInfos">
+                    <p>Maître Yoda</p>
+                    <a href="#">Contacter</a>
+                </div>
+                <div class="NotificationCenter__requestState">
+                    <p>Refusée</p>
+                </div>
+            </article>
+            <article class="NotificationCenter__item">
+                <div class="NotificationCenter__photo accepted">
+                    <img src="https://unsplash.it/1002/1002/?random" alt="profile">
+                </div>
+                <div class="NotificationCenter__characterInfos">
+                    <p>Maître Yoda</p>
+                    <a href="#">Contacter</a>
+                </div>
+                <div class="NotificationCenter__requestState accepted">
+                    <p>Acceptée</p>
+                </div>
+            </article>
+            <div class="Infos">
+                <a href="">About us</a>
+            </div>
+            <div class="Infos__users">
+                <a href="">Utilisateurs</a>
             </div>
         </aside>
     </main>
