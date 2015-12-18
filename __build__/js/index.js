@@ -1790,8 +1790,20 @@
 	    "author": "Marty C., 24 ans"
 	}, {
 	    "number": 13,
+	    "message": "Mon agenda de rendez-vous est plein grâce à StarLovers… <span>#JeVoisLa VieEnVert</span>",
+	    "author": "Chomel D., NaN ans"
+	}, {
+	    "number": 14,
+	    "message": "Depuis que je suis sur StarLovers, j’ai atteins la 7è Galaxie! Hé! <span>#PhilosophieDeLamour</span>",
+	    "author": "Pepe C., 23 ans"
+	}, {
+	    "number": 15,
+	    "message": "StarLover est l’algorithme parfait pour mes rencontres! <span>#RelationSalé</span>",
+	    "author": "Lepoivre F., 18 ans"
+	}, {
+	    "number": 16,
 	    "message": "Franchement c’est pas mal, même si vous pouviez faire un peu mieux… <span>#TeamCUnPeuTricky<span>",
-	    "author": "Simon B."
+	    "author": "Simon B., 22 ans"
 	}];
 	
 	var characters = exports.characters = [
