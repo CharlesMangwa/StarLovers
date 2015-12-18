@@ -27,6 +27,13 @@
 @import "base/form";
 @import "base/buttons";
 
-@import "components/Default";
+@import "components/Fade";
+@import "components/Navbar";
+@import "components/NotificationCenter";
+@import "components/ProposalCard";
 
+@import 'pages/mobile';
 @import 'pages/home';
+@import 'pages/match';
+@import 'pages/load';
+@import 'pages/characters';

@@ -15,11 +15,12 @@ export default {
     fonts: {
         formats: 'woff woff2',
         custom: {
-            'Open Sans': [400, 600]
+            'Open Sans': [400, 600],
+            'Tungsten': [700]            
         }
     },
     css: {
-        autoprefixer: ['> 98%']
+        autoprefixer: ['last 5 versions','> 98%']
     },
     javascript: {
         entry: ['index.js'],
