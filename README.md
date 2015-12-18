@@ -1,5 +1,5 @@
 # StarLovers
-May the Love be with you!
+May the 💖❤️Love💖❤️ be with you!
 
 ### Qu’est-ce que StarLovers ?
 StarLovers est un site qui vous permet de matcher avec vos personnages préférés de l’univers Star Wars. Il est l’heure pour vous de découvrir votre âme sœur à travers cette galaxie très très lointaine.
@@ -13,7 +13,7 @@ Créé à l’occasion d’une semaine intensive de développement front-end, St
 - Charles MANGWA, Lead developer
 - David TAING, Lead design
 - Arthur Chassin, Design
-- Clement CHARVET, DEvelper
+- Clement CHARVET, Develper
 - Maxime LUSSIANA, Developer
 
 ### Les technologies employées
