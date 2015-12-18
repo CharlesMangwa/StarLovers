@@ -1,0 +1,49 @@
+/**
+ * Navbar component style
+ *
+ */
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        position: relative;
+        background: none;
+        width: auto;
+        height: auto;
+        text-transform: uppercase;
+        @include respond-to('large') {
+            margin-right: 9.375rem;
+        }
+        &::before {
+            position: absolute;
+            transform: translateX(-50px) translateY(8px);
+            display: block;
+            content: "";
+            width: 30px;
+            height: 10px;
+            background: url('../img/arrow.svg') no-repeat center;
+            background-size: 100%;
+        }
+    }
+    .Logo a {
+        width: auto;
+        height: auto;
+        &::before {
+            display: none;
+        }
+        &:hover {
+            background: none;
+        }
+        img {
+            width: 250px;
+        }
+        @include respond-to('large') {
+            margin-left: 9.375rem;
+        }
+    }
+}
+

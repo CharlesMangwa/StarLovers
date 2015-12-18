@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 47.8 64.6" style="enable-background:new 0 0 47.8 64.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:none;fill:#DADADA;}
+	.st2{display:none;fill:#56A23F;}
+	.st3{display:none;fill:#D31E35;}
+	.st4{display:inline;fill:#222322;}
+	.st5{display:inline;}
+	.st6{display:inline;fill:#161615;}
+	.st7{display:inline;fill:#5A5A5A;}
+	.st8{display:inline;fill:#444443;}
+	.st9{fill:#986726;}
+	.st10{fill:#47361A;}
+	.st11{fill:#9F7236;}
+	.st12{fill:#AA7D3F;}
+	.st13{fill:#3D3C3D;}
+	.st14{fill:#222325;}
+	.st15{fill:#FFFFFF;}
+	.st16{display:none;fill:#FFFFFF;stroke:#C6C6C6;stroke-width:8;stroke-miterlimit:10;}
+</style>
+<rect x="-510.2" y="-648.2" class="st0" width="800" height="800"/>
+<rect x="-395.5" y="-37.6" class="st1" width="570.6" height="157.4"/>
+<circle class="st2" cx="22.8" cy="43.2" r="57.6"/>
+<g>
+	<g>
+		<circle class="st9" cx="24" cy="23.1" r="23.1"/>
+		<polygon class="st10" points="43.4,47 47.5,52.9 36.9,52.9 		"/>
+		<path class="st9" d="M46.8,25.6c0,0,0.5,5.5-0.4,7.8c0,0,2.3,2.7,1.1,19.5l-4.1-4.6l-5.3,12.6l-8.4-21.3L46.8,25.6z"/>
+		<polygon class="st10" points="38.1,60.8 28.4,56.8 34,48.3 		"/>
+		<path class="st11" d="M23.9,29.8c8.1-2,13.8,3.5,13.8,12.4S23.9,64.6,23.9,64.6"/>
+		<polygon class="st10" points="4.4,47 0.3,52.9 10.9,52.9 		"/>
+		<path class="st9" d="M1,25.6c0,0-0.5,5.5,0.4,7.8c0,0-2.3,2.7-1.1,19.5l4.1-4.6l5.3,12.6l8.4-21.3L1,25.6z"/>
+		<polygon class="st10" points="9.7,60.8 19.4,56.8 13.9,48.3 		"/>
+		<path class="st12" d="M23.9,64.6c0,0-13.8-13.5-13.8-22.4s5.7-14.4,13.8-12.4"/>
+		<polygon class="st13" points="19.8,29.3 23.9,26.6 23.9,32.1 		"/>
+		<polygon class="st14" points="28,29.4 23.9,26.6 23.9,32.1 		"/>
+	</g>
+	<ellipse cx="17.3" cy="23.9" rx="4.3" ry="1.8"/>
+	<ellipse cx="30.6" cy="23.9" rx="4.3" ry="1.8"/>
+	<circle class="st15" cx="17.8" cy="24.7" r="0.8"/>
+	<circle class="st15" cx="30.1" cy="24.7" r="0.8"/>
+</g>
+</svg>

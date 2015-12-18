@@ -1,18 +1,128 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>website-starter-kit</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="Default">
-            <div class="Default_content">
-                ¯\_(ツ)_/¯
+
+<head>
+    <meta charset="utf-8">
+    <title>StarLovers</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+</head>
+
+<body class="Home">
+    <div class="Home__presentation">
+        <div class="Home__presentation__logo">
+            <img src="img/starloversfull.svg" alt="StarLovers - May the Love be with you">
+        </div>
+        <div class="Home__presentation__text">
+            <h6>Trouvez l'amour à l'autre bout de la galaxie</h6>
+            <p>StarLovers est un site qui vous permet de matcher avec vos personnages préférés de l’univers Star Wars. Il est l’heure pour vous de découvrir votre âme sœur à travers cette galaxie très très lointaine.</p>
+        </div>
+        <div class="Home__quote">
+            <h6>Ce qu'ils pensent de nous</h6>
+            <div class="Home__quote__panel">
+                <p><span class="Home__quote__message"></span></p>
+                <p><span class="Home__quote__author"></span></p>
             </div>
         </div>
-        <script src="js/index.js"></script>
-    </body>
+    </div>
+    <div class="Home__form">
+        <form name="formHome" id="form">
+            <div class="Home__form__infos">
+                <h3 class="Home__form__about">À propos de vous</h3>
+                <label for="name">Prénom</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Votre prénom …" required>
+            </div>
+            <h3>Vos critères de sélection</h3>
+            <div class="Home__form__search">
+                <div class="Home__form__search__first">
+                    <p>
+                        <label for="gender">Genre</label>
+                        <br>
+                        <select name="Genre" id="gender">
+                            <option selected>—</option>
+                            <option value="male">Mâle</option>
+                            <option value="female">Femelle</option>
+                            <option value="idk">Un peu des deux</option>
+                            <option value="genderNothing">Pas de préférence</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="age">Age</label>
+                        <br>
+                        <select name="Âge" id="age">
+                            <option selected>—</option>
+                            <option value="young">Jeune</option>
+                            <option value="adult">Mature</option>
+                            <option value="old">Trop mature</option>
+                            <option value="ageNothing">Pas de préférence</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="hieght">Taille</label>
+                        <br>
+                        <select name="Taille" id="height">
+                            <option selected>—</option>
+                            <option value="tiny">Petit</option>
+                            <option value="normal">Normal</option>
+                            <option value="giant">Géant</option>
+                            <option value="heightNothing">Pas de préférence</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="Home__form__search__second">
+                    <p>
+                        <label for="weight">Poids</label>
+                        <br>
+                        <select name="Poids" id="weight">
+                            <option selected>—</option>
+                            <option value="light">Léger</option>
+                            <option value="equilibrate">Équilibré</option>
+                            <option value="heavy">Lourd</option>
+                            <option value="weightNothing">Pas de préférence</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="species">Espèce</label>
+                        <br>
+                        <select name="Espèce" id="species">
+                            <option selected>—</option>
+                            <option value="human">Humain</option>
+                            <option value="droid">Droïde</option>
+                            <option value="hairy">Tout ce qui a des poils</option>
+                            <option value="strange">Tout ce qui est étrange</option>
+                            <option value="speciesNothing">Pas de préférence</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="faction">Faction</label>
+                        <br>
+                        <select name="Faction" id="faction">
+                            <option selected>—</option>
+                            <option value="force">Force</option>
+                            <option value="empire">Empire</option>
+                            <option value="betrayor">Traître</option>
+                            <option value="factionNothing">Pas de préférence</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="Home__form__validate">
+                <input type="submit" value="#TROUVERMONÂMESOEUR" onClick="send_form('loading.html')">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+    function send_form(url) {
+        document.formHome.action = url;
+
+    }
+    </script>
+    ​
+    <script src="js/index.js"></script>
+</body>
+
 </html>

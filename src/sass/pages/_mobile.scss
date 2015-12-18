@@ -1,0 +1,57 @@
+/*
+* Mobile page style
+*
+*/
+
+.Mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/bg_home.png") no-repeat center;
+    background-size: cover;
+}
+
+.Mobile__container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+.Mobile__logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Mobile__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.Mobile__info__oops {
+    margin: 15% 0;
+    animation: advent 1s ease;
+}
+
+.Mobile__info__text {
+    text-align: center;
+    line-height: 2.1875rem;
+}
+
+@keyframes advent {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px)
+    }
+    70% {
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+

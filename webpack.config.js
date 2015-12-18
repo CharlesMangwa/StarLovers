@@ -16,6 +16,10 @@ module.exports = {
         loaders: [{
             loader: 'babel-loader',
             query: config.javascript.babel
+        },
+        {
+          test: /\.json$/,
+          loader: 'json'
         }]
-    }
+  }
 };

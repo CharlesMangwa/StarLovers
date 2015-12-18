@@ -1,0 +1,119 @@
+/**
+ * Notification center component style
+ *
+ */
+
+.NotificationCenter {
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+}
+
+.NotificationCenter__title {
+    margin: 5.625rem 0 3.75rem 1.5625rem;
+    @include respond-to('large') {
+        margin: 5rem 0 5rem 1.5625rem;
+    }
+}
+
+.NotificationCenter__item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.NotificationCenter__photo {
+    flex: 0.25;
+    img {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        @include respond-to('large') {
+            width: 6.25rem;
+            height: 6.25rem;
+        }
+    }
+    &::after {
+        position: absolute;
+        transform: translateX(3.4rem) translateY(-1.4rem);
+        display: block;
+        content: '';
+        width: 0.625rem;
+        height: 0.625rem;
+        border-radius: 50%;
+        box-shadow: 0 0 1.125rem #cecece;
+        background-color: #cecece;
+        @include respond-to('large') {
+            transform: translateX(5rem) translateY(-1.625rem);
+        }
+    }
+}
+
+.NotificationCenter__photo.accepted {
+    &::after {
+        box-shadow: 0 0 1.125rem $green;
+        background-color: $green;
+    }
+}
+
+.NotificationCenter__photo.declined {
+    &::after {
+        box-shadow: 0 0 1.125rem $pink;
+        background-color: $pink;
+    }
+}
+
+.NotificationCenter__characterInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    flex: 0.4;
+    margin-left: 0.625rem;
+    @include respond-to('large') {
+        flex: 0.3;
+        margin-left: 0;
+    }
+    p {
+        font-weight: 600;
+        font-size: 0.875rem;
+        margin: 5px 0;
+    }
+    a {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
+        color: $pink;
+        background: none;
+    }
+}
+
+.NotificationCenter__requestState {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.NotificationCenter__requestState p {
+    font-style: italic;
+    color: #cecece;
+}
+
+.NotificationCenter__requestState.accepted p {
+    font-style: normal;
+    color: $green;
+}
+
+.NotificationCenter__requestState.declined p {
+    font-style: normal;
+    color: $pink;
+}
+

@@ -1,0 +1,36 @@
+/*
+* Match page style
+*
+*/
+
+.Match {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/bg_match.png') no-repeat;
+    background-size: cover;
+}
+
+.Match__container {
+    display: flex;
+    height: 90vh;
+}
+
+.Match__proposal {
+    flex: 1;
+    padding: 5rem 0 0 5rem;
+}
+
+.Match__result {
+    display: flex;
+    align-items: center;
+    height: 3.125rem;
+    h2 {
+        font-size: 3.75rem;
+        margin-right: 2.5rem;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+

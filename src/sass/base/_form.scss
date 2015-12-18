@@ -2,13 +2,76 @@
  * <form> component style
  *
  */
+
 form {
-    input, textarea, button {
-        font-family: $default-fontFamily;
+    display                                                          : flex;
+    flex-direction                                                : column;
+    align-items                                                    : flex-start;
+    height                                                            : auto;
+    padding                                                         : 3.125rem 0 0 1.875rem; /*50px 30px*/
+
+    @media only screen and (orientation: portrait) and (min-height: 48rem) {
+        flex-grow: 0.3;
+        padding                                                    : 9.375rem 0 0 1.875rem; /*150px 30px*/
     }
 
-    input {}
-    textarea {}
-    button {}
+    @include respond-to('large'){
+         padding                                                    : 9.375rem 0 0 9.375rem; /*150px*/
+        height                                                        : 39.375rem; /*630px*/
+    }
 
+    label{
+    position                                                        : relative; 
+    color                                                            : $white;
+    text-transform                                              : uppercase;
+    font-size                                                       : 0.875rem; /*14px*/
+    font-weight                                                   : bold;
+    }
+    input[type="submit"]{
+        font-family                                                : "Open Sans", cursive;
+        width 					: 18.125rem; /*290px*/
+        height 					: 2.8125rem; /*45px*/
+        padding-left 				: 0.625rem; /*10px*/
+        font-size                                                   : 0.75rem; /*12px*/
+        font-weight                                               : bold;
+        color                                                        : $white;
+        border-radius                                           : 3px;
+        background-color                                    : $pink;
+        &:hover,
+        &:active,
+        &:focus {
+            cursor                                                   : pointer;
+            background-color                                 : $white;
+            color                                                     : $pink;
+            font-weight                                           : bold;
+            transition                                              : all ease-in-out 0.3s;
+        }        
+    }
+    input[type="text"]{
+        width                                                       : 17.5rem; /*280px*/
+        height                                                      : 2.8125rem; /*45px*/
+        color                                                        : $white; 
+        font-size                                                  : 0.875rem; /*14px*/
+        border                                                     : thin solid $white;
+        background                                             : transparent;
+        border-radius                                          : 3px;
+        padding-left                                             : 0.625rem; /*10px*/
+    }
+    select {
+        width 					:7.5rem;/*120px*/
+        height 					: 2.8125rem; /*45px*/
+        margin-right 			            : 1.2rem; /*20px*/
+        padding-left 				: 0.625rem; /*10px*/
+        background 				: transparent;
+        border 					: 1px solid white;
+        appearance 				: none;
+        border-radius 				: 1px;
+    }
+    p{
+        font-family                                                : "Open Sans", cursive;
+        font-weight                                               : 300;
+        color                                                         : $white;
+        margin-bottom                                          : 20px; 
+    }
 }
+

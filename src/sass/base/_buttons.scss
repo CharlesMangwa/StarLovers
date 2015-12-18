@@ -2,4 +2,88 @@
  * Button styles
  *
  */
-.btn {}
+
+.Button {
+    position: relative;
+    width: 14.375rem;
+    height: 3.125rem;
+    margin: 0 0.3125rem;
+    font-family: "Tungsten";
+    font-size: 1.875rem;
+    line-height: 0.6;
+    color: $pink;
+    border-radius: 3px;
+    background-color: $white;
+    transition: all ease 0.2s;
+    &::before {
+        position: absolute;
+        transform: translateX(-3.125rem) translateY(-0.4375rem);
+        content: "";
+        width: 1.875rem;
+        height: 1.875rem;
+        background-size: 100%;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+        background-color: mix($pink, black, 90%);
+        transition: all ease 0.3s;
+    }
+    &:active {
+        transform: scale(0.90);
+    }
+}
+
+.Button.no {
+    color: $white;
+    background-color: $pink;
+    padding: 0.4375rem 0 0 3.125rem;
+    &::before {
+        background: url('../img/darkvador.svg') no-repeat center;
+    }
+}
+
+.Button.yes {
+    color: $white;
+    background-color: $green;
+    padding: 0.4375rem 0 0 3.125rem;
+    &::before {
+        background: url('../img/chewbacca.svg') no-repeat center;
+    }
+}
+
+.Infos {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    a {
+        color: $pink;
+        background-color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white;
+            background-color: $pink;
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+.Infos__users {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    a {
+        color: $pink;
+        background-color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white;
+            background-color: $pink;
+            transition: all ease 0.3s;
+        }
+    }
+}
+
